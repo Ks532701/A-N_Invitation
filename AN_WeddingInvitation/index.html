@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anhujann & Nishalini Wedding invitation</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./assets/JS/app.js" defer></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Questrial&display=swap");
+    </style>
+  </head>
+  <body>
+    <!-- Hero Intro -->
+    <section class="hero">
+      <h1>Anhujann & Nishalini</h1>
+      <p>We are getting married!</p>
+    </section>
+
+    <!-- <section class="herotest">
+      <img src="./assets/img/hero.jpg" alt="">
+      <article>
+        <div></div>
+        <div></div>
+        <div></div>
+      </article>
+    </section> -->
+    <section class="invitation-countdown-wrapper">
+      <article class="invitation">
+        <img src="./assets/img/pillayar.jpeg" alt="pillayar" />
+        <h2>Hindu Wedding</h2>
+        <p>
+          We’re tying the knot in a traditional Hindu ceremony and would be
+          honored to have you with us as we celebrate love, togetherness, and
+          the start of our journey as husband and wife. This sacred occasion
+          marks the union of two souls and the coming together of families,
+          traditions, and lifelong promises. We hope to be surrounded by those
+          whose presence has brought us joy, support, and love as we begin this
+          new chapter.
+        </p>
+      </article>
+      <section class="countdown" id="countdown-section">
+        <!-- Clock will be inserted here by JS -->
+      </section>
+    </section>
+
+    <section class="stemningsbilleder">
+      <div class="container">
+        <input type="radio" name="slider" id="item-1" checked />
+        <input type="radio" name="slider" id="item-2" />
+        <input type="radio" name="slider" id="item-3" />
+
+        <div class="cards">
+          <label class="cardA" for="item-1" id="song-1">
+            <img src="./assets/img/gallery2.jpg" alt="photo 1" />
+          </label>
+          <label class="cardA" for="item-2" id="song-2">
+            <img src="./assets/img/galleri.jpg" alt="photo 2" />
+          </label>
+          <label class="cardA" for="item-3" id="song-3">
+            <img src="./assets/img/hero.jpg" alt="photo 3" />
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <div class="info-sections">
+      <article class="dresscode">
+        <h2>Dresscode</h2>
+        <p>
+          Festive Indian attire or colorful formal wear. We kindly ask guests to
+          avoid wearing all-black or all-white outfits, as these colors are
+          traditionally associated with mourning in Hindu culture.
+        </p>
+      </article>
+
+      <section class="venue-section">
+        <div class="section-content">
+          <h2 class="section-title">Location</h2>
+          <div class="venue-image">
+            <img src="./assets/img/location.png" class="lokgif" alt="venue" />
+          </div>
+          <p>Teglvænget 93, 7400 Herning</p>
+          <a
+            href="https://maps.app.goo.gl/hCGmFk1u6rzh6bVJ7"
+            target="_blank"
+            class="maps-button"
+            rel="noopener noreferrer"
+          >
+            Open in Google Maps
+          </a>
+        </div>
+      </section>
+
+      <aside class="wishlist">
+        <h2>Wishlist</h2>
+        <img src="./assets/img/gift.png" alt="gaver" class="lokgif" />
+        <p></p>
+        <a
+          href="https://onskeskyen.dk/da/wishlists/Bwgmj1NeGHbfjbLP"
+          rel="noopener noreferrer"
+          target="_blank"
+          >Open Ønskeskyen</a
+        >
+      </aside>
+    </div>
+    <form id="rsvp-form" method="POST">
+      <div class="formimg">
+        <img src="./assets/img/formsorthvid .jpg" alt="sorthvid" />
+      </div>
+
+      <div class="form-sec">
+        <h3>RSVP</h3>
+        <img src="./assets/img/formheart.jpg" alt="" />
+        <p>Kindly respond by October 15, 2025.</p>
+
+        <label for="attendance">Deltager du?</label>
+        <select id="attendance" name="attendance" required>
+          <option value="">-- Vælg --</option>
+          <option value="ja">Ja, jeg deltager</option>
+          <option value="nej">Nej, desværre</option>
+        </select>
+
+        <!-- Sektion kun hvis man deltager -->
+        <div id="attendance-details" style="display: none">
+          <label for="guest-count">Antal deltagere:</label>
+          <input
+            type="number"
+            id="guest-count"
+            name="guest-count"
+            min="1"
+            max="10"
+            placeholder="1"
+          />
+
+          <div id="name-fields"></div>
+        </div>
+
+        <button type="submit">Send</button>
+      </div>
+    </form>
+
+    <article class="hilsen">
+      <h2>Best regards</h2>
+      <p>
+        We can’t wait to take our first steps as husband and wife, and it means
+        the world to us — and to our families — to have you there by our side.
+        Sharing this day with you will make it all the more magical, and we look
+        forward to celebrating not just our love, but the bonds of friendship
+        and family that mean everything to us.
+      </p>
+      <h4>
+        With love from us and our families,<br />Anhujann & Nishalini
+        <br />Parameswaran Family & Kaneshkumar Family
+      </h4>
+    </article>
+    <aside class="azhai"></aside>
+  </body>
+</html>
